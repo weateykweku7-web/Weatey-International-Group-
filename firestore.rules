@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /members/{uid} {
+      allow create: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.status == "pending_approval"
+        && request.resource.data.role == "member";
+      allow read: if request.auth != null && request.auth.uid == uid;
+      // Only trusted administrators should approve members. Add a server-managed
+      // admin custom claim and enforce it here before enabling admin writes.
+      allow update, delete: if false;
+    }
+  }
+}

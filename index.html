@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101b35">
+  <title>Weatey International Group</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><img src="assets/logo.svg" alt="Weatey logo"><span>WEATEY <small>INTERNATIONAL GROUP</small></span></a>
+  <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  <nav id="nav"><a href="#about">About</a><a href="#divisions">Our Divisions</a><a href="#contact">Contact</a><button class="btn btn-outline" id="openAuth">Sign in</button></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">ONE GROUP · MANY POSSIBILITIES</p>
+    <h1>Building ideas.<br><em>Creating opportunities.</em></h1>
+    <p class="lead">A diversified group bringing people, businesses and practical solutions together through innovation, service and enterprise.</p>
+    <div class="actions"><a class="btn" href="#divisions">Explore our divisions</a><button class="btn btn-light" id="joinTop">Join the group</button></div>
+  </div>
+  <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="glow-card"><img src="assets/logo.svg" alt=""><strong>WEATEY</strong><span>INTERNATIONAL GROUP</span><small>Vision · Innovation · Growth</small></div></div>
+</section>
+<section class="stats"><div><b>One</b><span>connected group</span></div><div><b>Global</b><span>ambition</span></div><div><b>People</b><span>at the centre</span></div></section>
+<section class="section" id="about"><p class="eyebrow">WHO WE ARE</p><h2>A shared vision for progress.</h2><p class="section-intro">Weatey International Group is a parent brand designed to bring complementary ventures under one clear identity. Our divisions work toward practical value for individuals, businesses and communities.</p></section>
+<section class="section divisions" id="divisions"><p class="eyebrow">OUR PORTFOLIO</p><h2>Our business divisions</h2><div class="cards">
+<article class="card"><span class="number">01</span><h3>Technology & AI</h3><p>Digital products, AI chatbots, automation and technology services that help organisations work smarter.</p><a href="mailto:weateykweku7@gmail.com?subject=Technology%20and%20AI">Enquire →</a></article>
+<article class="card"><span class="number">02</span><h3>Consulting & Business</h3><p>Business support, professional services, strategy and practical solutions for growing enterprises.</p><a href="mailto:weateykweku7@gmail.com?subject=Business%20Consulting">Enquire →</a></article>
+<article class="card"><span class="number">03</span><h3>Travel & Tourism</h3><p>Travel coordination, destination experiences and partnership opportunities connecting Ghana to the world.</p><a href="mailto:weateykweku7@gmail.com?subject=Travel%20and%20Tourism">Enquire →</a></article>
+<article class="card"><span class="number">04</span><h3>Education & Development</h3><p>Learning support, skills development and initiatives that create pathways to opportunity.</p><a href="mailto:weateykweku7@gmail.com?subject=Education">Enquire →</a></article>
+<article class="card"><span class="number">05</span><h3>Trade & Enterprise</h3><p>Connecting products, services, suppliers and customers through responsible business opportunities.</p><a href="mailto:weateykweku7@gmail.com?subject=Trade%20and%20Enterprise">Enquire →</a></article>
+</div></section>
+<section class="cta"><div><p class="eyebrow">GROW WITH US</p><h2>Have an idea or partnership in mind?</h2><p>Connect with Weatey International Group and let's explore what we can build together.</p></div><a class="btn btn-light" href="mailto:weateykweku7@gmail.com">Contact our team</a></section>
+<section class="section contact" id="contact"><p class="eyebrow">GET IN TOUCH</p><h2>Let's start a conversation.</h2><p>Email: <a href="mailto:weateykweku7@gmail.com">weateykweku7@gmail.com</a></p><p>WhatsApp: <a href="https://wa.me/233553688108">+233 553 688 108</a></p><p>Website: <a href="https://trustyourself.com">trustyourself.com</a></p></section>
+</main>
+<footer><span>© <span id="year"></span> Weatey International Group. All rights reserved.</span><span>Built for a brighter future.</span></footer>
+
+<div class="modal" id="authModal" aria-hidden="true"><div class="modal-box"><button class="close" id="closeAuth" aria-label="Close">×</button><p class="eyebrow">MEMBER ACCESS</p><h2 id="authTitle">Create your account</h2><p class="muted">Registration is open. New accounts require administrator approval before member access is activated.</p>
+<form id="authForm"><label>Full name<input id="fullName" autocomplete="name" required></label><label>Email address<input id="email" type="email" autocomplete="email" required></label><label>Password<input id="password" type="password" minlength="8" autocomplete="new-password" required></label><button class="btn full" type="submit" id="authSubmit">Register</button></form>
+<div class="switch">Already registered? <button id="switchAuth">Sign in</button></div><p class="status" id="authStatus" role="status"></p><div class="account-actions"><button id="deleteAccount">Delete my account</button></div></div></div>
+<script type="module" src="app.js"></script>
+</body></html>
